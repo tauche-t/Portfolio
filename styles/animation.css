@@ -1,0 +1,177 @@
+@keyframes bounce1 {
+  0% {
+    right: -340px;
+    top: -180px;
+    transform: translateX(0);
+    width: 80px;
+    height: 80px;
+  }
+  20% {
+    transform: translateX(-90px);
+  }
+  40% {
+    width: 80px;
+    height: 80px;
+  }
+  57% {
+    right: 80px;
+    top: 230px;
+    width: 120px;
+    height: 60px;
+  }
+
+  64% {
+    right: 80px;
+    top: 230px;
+    transform: translateY(0);
+    width: 80px;
+    height: 80px;
+  }
+  80% {
+    transform: translateY(-200px);
+  }
+  100% {
+    right: 600px;
+    top: 50px;
+    width: 80px;
+    height: 80px;
+  }
+}
+
+@keyframes bounce2 {
+  0% {
+    right: 426px;
+    top: -350px;
+    width: 80px;
+    height: 80px;
+  }
+
+  40% {
+    width: 80px;
+    height: 80px;
+  }
+
+  50% {
+    right: 426px;
+    top: 300px;
+    width: 120px;
+    height: 60px;
+  }
+
+  70% {
+    right: 426px;
+    top: -70px;
+    width: 80px;
+    height: 80px;
+  }
+
+  85% {
+    right: 426px;
+    top: 80px;
+    transform: translateY(0);
+  }
+  90% {
+    right: 426px;
+    top: 50px;
+    transform: translateY(-20px);
+  }
+  95% {
+    right: 426px;
+    top: 50px;
+    transform: translateY(10px);
+  }
+  100% {
+    right: 426px;
+    top: 50px;
+    transform: translateY(0);
+  }
+}
+
+@keyframes bounce3 {
+  0% {
+    right: -340px;
+    top: -180px;
+    transform: translateX(0);
+    width: 80px;
+    height: 80px;
+  }
+  20% {
+    transform: translateX(-90px);
+  }
+  40% {
+    width: 80px;
+    height: 80px;
+  }
+  57% {
+    right: 80px;
+    top: 230px;
+    width: 120px;
+    height: 60px;
+  }
+
+  64% {
+    right: 80px;
+    top: 230px;
+    transform: translateY(0);
+    width: 80px;
+    height: 80px;
+  }
+  80% {
+    transform: translateY(-200px);
+  }
+  100% {
+    right: 253px;
+    top: 50px;
+    width: 80px;
+    height: 80px;
+  }
+}
+
+@keyframes bounce4 {
+  0% {
+    right: 83px;
+    top: -350px;
+    width: 80px;
+    height: 80px;
+  }
+
+  40% {
+    width: 80px;
+    height: 80px;
+  }
+
+  50% {
+    right: 83px;
+    top: 300px;
+    width: 120px;
+    height: 60px;
+  }
+
+  70% {
+    right: 83px;
+    top: -70px;
+    width: 80px;
+    height: 80px;
+  }
+
+  85% {
+    right: 83px;
+    top: 80px;
+    transform: translateY(0);
+  }
+  90% {
+    right: 83px;
+    top: 50px;
+    transform: translateY(-20px);
+  }
+  95% {
+    right: 83px;
+    top: 50px;
+    transform: translateY(10px);
+  }
+  100% {
+    right: 83px;
+    top: 50px;
+    transform: translateY(0);
+  }
+}
