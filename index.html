@@ -226,6 +226,104 @@
             </div>
           </div>
         </section>
+
+        <div id="popup_wrap" class="overlay hide">
+          <div class="humming_bird_wrap">
+            <div class="popup_close">
+              <i class="fas fa-times"></i>
+            </div>
+            <div class="popup_header">
+              <h2>허밍버드</h2>
+              <p class="popup_overview">                   
+                React와 Redux, Redux-Saga를 통해 <br /> 간단한 회원가입 및 로그인, 게시글 작성, 삭제 기능이 있는 웹/앱입니다.<br />
+                백엔드 API가 없다는 가정하에 LocalStorage로 작업하였고,<br />
+                Faker 라이브러리를 통해 더미데이터를 생성한 뒤 무한 스크롤링 기능을 입혔습니다.
+              </p>
+            </div>
+
+            <div class="popup_contents">
+              <section class="contents_section">
+                <div class="contents_box">
+                  <div class="contents_img"></div>
+                  <div class="contents_text">
+                    <h3>회원가입 및 로그인</h3>
+                    <p>
+                      회원가입을 하면 localStorage에 유저 정보가 저장이 되고,<br />
+                      로그인시 저장되어 있는 유저정보를 찾은 뒤, 해당 정보를 저장하여 로그인하는 
+                      방식을 사용했습니다.
+                    </p>
+                  </div>
+                </div>
+                <div class="contents_code">
+                  <img src="img/humming-bird-img1.png" alt="" />
+                </div>
+              </section>
+              <section class="contents_section contents_section_reverse content_post">
+                <div class="contents_box">
+                  <div class="contents_text">
+                    <h3>게시글 작성 및 삭제</h3>
+                    <p>
+                      게시글 또한 localStorage를 활용하여 작성한 게시글이 새로고침을 해도 
+                      유지가 되도록 설계하였습니다.
+                      게시글의 작성자를 구분지을 수 있도록 게시글마다 유저 고유의 id를 지정하여
+                      게시글 작성과 삭제 모두 해당 유저에게만 허용되도록 설계하였습니다.
+                    </p>
+                  </div>
+                  <div class="contents_img"></div>
+                </div>
+                <div class="contents_code">
+                  <img src="img/humming-bird-img1.png" alt="" />
+                </div>
+              </section>
+              <section class="contents_section content_comment">
+                <div class="contents_box">
+                  <div class="contents_img"></div>
+                  <div class="contents_text">
+                    <h3>댓글 작성 및 삭제</h3>
+                    <p>
+                      게시글을 작성한 유저와 해당 게시글의 id를 매칭시킨 뒤, 
+                      댓글을 남길 수 있도록 설계하였습니다.
+                    </p>
+                  </div>
+                </div>
+                <div class="contents_code">
+                  <img src="img/humming-bird-img1.png" alt="" />
+                </div>
+              </section>
+              <section class="contents_section contents_section_center">
+                <div class="contents_box">
+                  <div class="contents_text">
+                    <h3>백엔드 API에 대한 설계</h3>
+                    <p>
+                      백엔드 API가 없다는 가정하에 localStorage로 우선적으로 작업한 상황을 
+                      가정하고 만든 프로젝트이기 때문에 백엔드 API가 만들어지면 바로 설정한다는 전제로 
+                      코드를 설계하였습니다.
+                    </p>
+                  </div>
+                </div>
+                <div class="contents_code">
+                  <img src="img/humming-bird-img1.png" alt="" />
+                </div>
+              </section>
+              <section class="contents_section content_scroll">
+                <div class="contents_box">
+                  <div class="contents_img"></div>
+                  <div class="contents_text">
+                    <h3>인피니티 스크롤</h3>
+                    <p>
+                      사용자가 서비스를 이용할 때 컨텐츠의 끊김이 발생하지 않도록
+                      스크롤을 끝에서부터 살짝 닿는 지점에 왔을 때 게시글이 10개정도 
+                      새롭게 로드되도록 하였습니다.
+                    </p>
+                  </div>
+                </div>
+                <div class="contents_code">
+                  <img src="img/humming-bird-img1.png" alt="" />
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
         
         <section id="blog">
           <h2 class="title_bg">Blog</h2>
