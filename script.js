@@ -41,23 +41,51 @@ function onTabBar(item) {
 
 
 // Project PopUp & Hover
-const projectContents = document.querySelector('.project_contents');
-const projectOverview = document.querySelector('.project_overview');
+const projectContent = document.querySelectorAll('.project_content');
+// const projectContents = projectContent.querySelector('.project_contents');
+// const projectOverview = document.querySelector('.project_overview');
 const overlay = document.querySelector('.overlay');
-const popupClose = document.querySelector('.popup_close');
+const popupContentsBox = document.querySelectorAll('.popup_contents_box');
+const popupContents = document.querySelectorAll('.popup_contents_box');
 
-projectContents.addEventListener('mouseenter', function() {
-  projectOverview.classList.add("hover");
+popupContentsBox.forEach((e) => {
+  const popupClose = e.querySelector('.popup_close');
+
+  popupClose.addEventListener('click', function() {
+    overlay.classList.add('hide');
+  });
 });
-projectContents.addEventListener('mouseleave', function() {
-  projectOverview.classList.remove("hover");
+
+projectContent.forEach((e) => {
+  const projectContents = e.querySelector('.project_contents');
+  const projectOverview = e.querySelector('.project_overview');
+
+  projectContents.addEventListener('click', function(e) {
+    const projectIndex = e.currentTarget.parentNode.parentNode.getAttribute('data-index');
+
+    overlay.classList.remove('hide');
+
+    popupContents.forEach((e) => {
+      const popupIndex = e.getAttribute('data-index');
+      e.classList.remove("contents_on");
+
+      if(projectIndex === popupIndex) {
+        e.classList.add("contents_on");
+      }
+    });
+  });
+
+  projectContents.addEventListener('mouseenter', function() {
+    projectOverview.classList.add("hover");
+  });
+  projectContents.addEventListener('mouseleave', function() {
+    projectOverview.classList.remove("hover");
+  });
 });
-projectContents.addEventListener('click', function() {
-  overlay.classList.remove('hide');
-});
-popupClose.addEventListener('click', function() {
-  overlay.classList.add('hide');
-})
+
+// projectContents.addEventListener('click', function() {
+//   overlay.classList.remove('hide');
+// });
 
 // FAQ accordion
 const faqContent = document.getElementsByClassName('faq_content');

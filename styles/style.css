@@ -690,11 +690,12 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 1000;
 }
 #popup_wrap.hide {
   display: none;
 }
-#popup_wrap .humming_bird_wrap {
+#popup_wrap .popup_contents_box {
   width: 1100px;
   height: 85vh;
   background: #fff;
@@ -702,6 +703,11 @@ section {
   padding: 30px 50px;
   box-sizing: border-box;
   overflow-y: scroll;
+  position: absolute;
+  display: none;
+}
+#popup_wrap .popup_contents_box.contents_on {
+  display: block;
 }
 #popup_wrap .popup_close {
   display: flex;
@@ -713,6 +719,14 @@ section {
 }
 #popup_wrap .popup_header {
   background: #ffa8a8;
+  padding: 50px 30px;
+}
+#popup_wrap .junflix_wrap .popup_header {
+  background: #f03e3e;
+  padding: 50px 30px;
+}
+#popup_wrap .daily_wrap .popup_header {
+  background: #adb5bd;
   padding: 50px 30px;
 }
 #popup_wrap .popup_header h2 {
@@ -788,6 +802,15 @@ section {
   width: 700px;
   margin: 20px auto;
 }
+#popup_wrap .popup_contents .contents_section.contents_section_center .contents_code {
+  width: 450px;
+}
+#popup_wrap .popup_contents .contents_section.content_todo .contents_code {
+  width: 700px;
+}
+#popup_wrap .popup_contents .contents_section.content_scroll .contents_code {
+  width: 800px;
+}
 
 #popup_wrap .popup_contents .contents_section.contents_section_reverse {
   margin-top: 30px;
@@ -816,6 +839,35 @@ section {
 }
 
 
+/* junflix img */
+#popup_wrap .junflix_wrap .popup_contents .contents_section .contents_img {
+  background: url(../img/junflix-img1.PNG) 0 0 no-repeat;
+  background-size: contain;
+}
+
+#popup_wrap .junflix_wrap .popup_contents .contents_section.content_motion .contents_img {
+  background: url(../img/motion.gif) 0 0 no-repeat;
+}
+
+/* DailyToDo App */
+#popup_wrap .daily_wrap .popup_contents .contents_section .contents_img {
+  background: url(../img/daily_to_do.gif) 0 0 no-repeat;
+  background-size: contain;
+  width: 340px;
+  height: 590px;
+}
+#popup_wrap .daily_wrap .popup_contents .contents_section.contents_calendar .contents_img {
+  background: url(../img/calendar_code.PNG) 0 0 no-repeat;
+  background-size: contain;
+  width: 500px;
+  height: 300px;
+}
+/* #popup_wrap .daily_wrap .popup_contents .contents_section.content_todo .contents_img {
+  background: url(../img/todo_code.png) 0 0 no-repeat;
+  background-size: contain;
+  width: 500px;
+  height: 300px;
+} */
 
 
 
