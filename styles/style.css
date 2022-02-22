@@ -34,7 +34,7 @@ section {
 .tag::before,
 .tag::after {
   display: block;
-  font-family: 'LaBelleAurore', sans-serif;
+  font-family: 'La Belle Aurore', sans-serif;
   font-size: 18px;
   color: #c2c2c2;
   position: absolute;
@@ -118,7 +118,7 @@ section {
 #content_container::before {
   content: "<html>";
   display: block;
-  font-family: 'LaBelleAurore', sans-serif;
+  font-family: 'La Belle Aurore', sans-serif;
   font-size: 18px;
   color: #c2c2c2;
   position: absolute;
@@ -128,7 +128,7 @@ section {
 #content_container::after {
   content: "</html>";
   display: block;
-  font-family: 'LaBelleAurore', sans-serif;
+  font-family: 'La Belle Aurore', sans-serif;
   font-size: 18px;
   color: #c2c2c2;
   position: absolute;
@@ -142,7 +142,7 @@ section {
 #content_container .inner_container::before {
   content: "<body>";
   display: block;
-  font-family: 'LaBelleAurore', sans-serif;
+  font-family: 'La Belle Aurore', sans-serif;
   font-size: 18px;
   color: #c2c2c2;
   position: absolute;
@@ -152,7 +152,7 @@ section {
 #content_container .inner_container::after {
   content: "</body>";
   display: block;
-  font-family: 'LaBelleAurore', sans-serif;
+  font-family: 'La Belle Aurore', sans-serif;
   font-size: 18px;
   color: #c2c2c2;
   position: absolute;
@@ -178,7 +178,7 @@ section {
   bottom: -23px;
 }
 #home p {
-  font-family: 'NanumGothic';
+  font-family: 'Nanum Gothic';
   font-weight: 400;
   color: #3a3a3a;
   margin-left: 20px;
@@ -366,7 +366,7 @@ section {
 }
 #skills .skills_wrapper ul.skills_tab li {
   padding: 5px 0;
-  font-family: 'NanumGothic';
+  font-family: 'Nanum Gothic';
   font-weight: 700;
   cursor: pointer;
 }
@@ -398,7 +398,7 @@ section {
 #skills .skills_contents_wrap .skills_content ul li {
   margin-right: 35px;
   text-align: center;
-  font-family: 'NanumGothic';
+  font-family: 'Nanum Gothic';
 }
 #skills .skills_contents_wrap .skills_content ul li .main_skills_img {
   margin: 0 auto;
@@ -565,7 +565,7 @@ section {
   padding: 35px 40px;
   box-sizing: border-box;
   background: #fff;
-  font-family: 'NanumGothic';
+  font-family: 'Nanum Gothic';
 }
 #project .project_section .project_content .project_txt_wrap .project_overview p {
   line-height: 1.4;
@@ -626,7 +626,7 @@ section {
 #project .project_section .project_content .project_txt_wrap .project_language {
   display: flex;
   align-items: center;
-  font-family: 'NanumGothic';
+  font-family: 'Nanum Gothic';
 }
 #project .project_section .project_content .project_txt_wrap .project_language li {
   border: 1px solid #fdb9b9;
@@ -676,7 +676,7 @@ section {
   transition: all 0.5s ease-in-out;
 }
 #project .project_section .project_content .project_txt_wrap .project_btn li a {
-  font-family: 'NanumGothic';
+  font-family: 'Nanum Gothic';
   color: #74c0fc;
 }
 
@@ -719,6 +719,7 @@ section {
   color: #000;
   font-size: 24px;
   font-family: 'Roboto';
+  font-weight: 500;
 }
 #project .project_section .project_content.project_content02 .project_txt_wrap {
   left: 152px;
@@ -768,6 +769,7 @@ section {
   color: #000;
   font-size: 24px;
   font-family: 'Roboto';
+  font-weight: 500;
 }
 
 #project .project_section .project_content.project_content03 .project_txt_wrap .project_overview span {
@@ -843,7 +845,7 @@ section {
 }
 #popup_wrap .popup_header p {
   color: #fff;
-  font-family: 'NanumGothic';
+  font-family: 'Nanum Gothic';
   line-height: 1.2;
   font-size: 17px;
   position: relative;
@@ -1012,18 +1014,19 @@ section {
 #blog .blog_wrap .blog_content span {
   font-family: 'Roboto';
   color: #ffdb5c;
+  font-weight: 500;
 }
 #blog .blog_wrap .blog_content span.react {
   color: #99e9f2; 
 }
 #blog .blog_wrap .blog_content h3 {
-  font-family: 'NanumGothic';
+  font-family: 'Nanum Gothic';
   font-weight: 500;
   font-size: 24px;
   margin: 15px 0 35px;
 }
 #blog .blog_wrap .blog_content p {
-  font-family: 'NanumGothic';
+  font-family: 'Nanum Gothic';
   line-height: 1.4;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -1032,7 +1035,7 @@ section {
   white-space: nowrap;
 }
 #blog .blog_wrap .blog_content span.blog_date {
-  font-family: 'NanumGothic';
+  font-family: 'Nanum Gothic';
   color: #ced1d3;
   font-weight: 500;
   font-size: 14px;
