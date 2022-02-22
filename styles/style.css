@@ -442,12 +442,17 @@ section {
   height: 78px;
   background: url(../img/main_usage_skills.png) -654px 0 no-repeat;
 }
+#skills .skills_contents_wrap .main_skills ul li:nth-child(8) .main_skills_img {
+  width: 102px;
+  height: 78px;
+  background: url(../img/main_usage_skills.png) -765px 0 no-repeat;
+}
 #skills .skills_contents_wrap .main_skills ul li p {
   margin-top: 10px;
 }
 
 #skills .skills_contents_wrap .used_before ul li:nth-child(1) .used_before_img {
-  width: 104px;
+  width: 120px;
   height: 65px;
   background: url(../img/used_before.png) 0 0 no-repeat;
 }
@@ -457,19 +462,14 @@ section {
   background: url(../img/used_before.png) -155px 0 no-repeat;
 }
 #skills .skills_contents_wrap .used_before ul li:nth-child(3) .used_before_img {
-  width: 73px;
+  width: 86px;
   height: 63px;
-  background: url(../img/used_before.png) -295px 0 no-repeat;
+  background: url(../img/used_before.png) -315px 0 no-repeat;
 }
 #skills .skills_contents_wrap .used_before ul li:nth-child(4) .used_before_img {
-  width: 64px;
-  height: 63px;
-  background: url(../img/used_before.png) -401px 0 no-repeat;
-}
-#skills .skills_contents_wrap .used_before ul li:nth-child(5) .used_before_img {
-  width: 87px;
-  height: 63px;
-  background: url(../img/used_before.png) -491px 0 no-repeat;
+  width: 75px;
+  height: 68px;
+  background: url(../img/used_before.png) -450px 0 no-repeat;
 }
 
 
