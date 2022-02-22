@@ -22,8 +22,26 @@
             <li><a href="#blog">Bolg</a></li>
             <li><a href="#faq">FAQ</a></li>
             <li><a href="#contact">Contact</a></li>
-            <li><a href="#"><i class="fab fa-github"></i></a></li>
-            <li><a href="#"><i class="fas fa-comment-dots"></i></a></li>
+            <li><a href="https://github.com/tauche-t" target="_blank"><i class="fab fa-github"></i></a></li>
+            <li><a href="https://periodic-cup-8bf.notion.site/JUNMO-9951e7d4bcf8429f9ad435a5c2de3dc3" target="_blank"><i class="far fa-file-alt"></i></a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <header id="hidden_header">
+        <nav>
+          <a href="#home">
+            <div class="logo"></div>
+          </a>
+
+          <ul>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#project">Project</a></li>
+            <li><a href="#blog">Bolg</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="https://github.com/tauche-t" target="_blank"><i class="fab fa-github"></i></a></li>
+            <li><a href="https://periodic-cup-8bf.notion.site/JUNMO-9951e7d4bcf8429f9ad435a5c2de3dc3" target="_blank"><i class="far fa-file-alt"></i></a></li>
           </ul>
         </nav>
       </header>
@@ -32,19 +50,29 @@
         <section id="home">
           <div class="home_text">
             <h1 class="title tag">
-              안녕하세요! 
-              <br />
-              프론트엔드 개발자를 희망하는 
-              <br />
-              조준모라고 합니다.
+              <div class="text_wrapper">
+                <span class="letters">안녕하세요!</span>
+              </div>
+              <div class="text_wrapper">
+                <span class="letters">프론트엔드 개발자를 지향하는</span>
+              </div>
+              <div class="text_wrapper">
+                <span class="letters">조준모라고 합니다.</span>
+              </div>
             </h1>
             <p class="tag">
               항상 본질적인 것을 염두에 두고, 더 나은 편의성을 위한
               <br />
-              서비스 구현을 하는 프론트엔드 개발자를 꿈꾸며,
+              서비스 구현을 하는 프론트엔드 개발자를 꿈꾸고 있습니다.
               <br />
-              한발, 한발, 나아가고 있는 저는 조준모라고 합니다.
+              저에 대해 더 궁금하시다면 해당 페이지와 아래 버튼을 클릭하여
+              <br />
+              이력서를 확인해 주시면 감사하겠습니다!
             </p>
+            <button class="resume_btn">
+              <em></em>
+              <span>RESUME</span>
+            </button> 
           </div>
           <div class="bounce_container">
             <div class="bounce">책임감</div>
@@ -158,8 +186,8 @@
                   <li>LocalStorage</li>
                 </ul>
                 <ul class="project_btn">
-                  <li><a href="#">GitHub</a></li>
-                  <li><a href="#">Visit</a></li>
+                  <li><a href="https://github.com/tauche-t/Humming-bird.re" target="_blank">GitHub</a></li>
+                  <li><a href="https://humming-bird.netlify.app" target="_blank">Visit</a></li>
                 </ul>
               </div>
             </div>
@@ -191,8 +219,8 @@
                   <li>MotionFramer.js</li>
                 </ul>
                 <ul class="project_btn">
-                  <li><a href="#">GitHub</a></li>
-                  <li><a href="#">Visit</a></li>
+                  <li><a href="https://github.com/tauche-t/junflix" target="_blank">GitHub</a></li>
+                  <li><a href="https://tauche-t.github.io/junflix" target="_blank">Visit</a></li>
                 </ul>
               </div>
             </div>
@@ -221,7 +249,7 @@
                   <li>React-Native</li>
                 </ul>
                 <ul class="project_btn">
-                  <li><a href="#">GitHub</a></li>
+                  <li><a href="https://github.com/tauche-t/DailyToDo" target="_blank">GitHub</a></li>
                 </ul>
               </div>
             </div>
@@ -447,10 +475,66 @@
                 <span class="blog_date">2021-11-30</span>
               </a>
             </div>
-            <div class="blog_content blog_content02"></div>
-            <div class="blog_content blog_content03"></div>
-            <div class="blog_content blog_content04"></div>
-            <div class="blog_content blog_content05"></div>
+            <div class="blog_content blog_content02">
+              <a href="https://velog.io/@keyjinnam/%ED%95%98%EB%A3%A8%EA%B3%B5%EB%B6%80-JS-or-%EC%A4%91%EB%B3%B5-%EC%A0%9C%EA%B1%B0" target="blank">
+                <span>JAVASCRIPT</span>
+                <h3>[JS] or 중복 제거</h3>
+                <p>
+                  조건문에서 or 연산자를 사용할 때, <br /> 여러개의 값을 or연산자를 통해
+                  작성해야 하는 순간이 있었습니다.
+                </p>
+                <span class="blog_date">2021-12-16</span>
+              </a>
+            </div>
+            <div class="blog_content blog_content03">
+              <a href="https://velog.io/@keyjinnam/%ED%95%98%EB%A3%A8%EA%B3%B5%EB%B6%80-JS-reduce-%EA%B8%B0%EB%B3%B8%EA%B0%9C%EB%85%90" target="blank">
+                <span>JAVASCRIPT</span>
+                <h3>[JS] reduce 기본개념</h3>
+                <p>
+                  공식문서를 보고 이해가 썩 잘 되지는 않아서<br /> 그냥 나름대로 이것저것 찾아보면서<br />
+                  reduce()메서도의 아주 기본 개념만을 살펴봤습니다.
+                  
+                  가장 먼저 단순히 1~4까지의 배열을 모두 더해야할 때,
+                </p>
+                <span class="blog_date">2021-12-17</span>
+              </a>
+            </div>
+            <div class="blog_content blog_content04">
+              <a href="https://velog.io/@keyjinnam/Next.js-%EA%B8%B0%EB%B3%B8-%EA%B0%9C%EB%85%90" target="blank">
+                <span class="react">REACT</span>
+                <h3>[Next.js] 기본 개념</h3>
+                <p>
+                  Next는 리액트의 프레임워크입니다.
+                  <br />
+                  실무에 사용하기 적합한만큼 갖춰진 것은 많지만,
+                  <br />
+                  프레임워크 특성상 자유도는 떨어집니다.
+                  <br />
+                  Next의 가장 큰 장점은 바로 ‘Sever Side Rendering’ 입니다.
+                </p>
+                <span class="blog_date">2022-01-14</span>
+              </a>
+            </div>
+            <div class="blog_content blog_content05">
+              <a href="https://velog.io/@keyjinnam/Next.js-Setting" target="blank">
+                <span class="react">REACT</span>
+                <h3>[Next.js] Setting</h3>
+                <p>
+                  폴더에 노드기반의 프로젝트 및
+                  <br />
+                  package를 생성해 줍니다.
+                  <br />
+                  package name : 프로젝트 명
+                  <br />
+                  나머지는 다 프리패스 해주시고, 마지막에 yes해주시면
+                  <br />
+                  프로젝트가 생성이 됩니다.
+                  <br />
+                  (중간에 author에는 본인의 이름을 적어주면 됩니다.)
+                </p>
+                <span class="blog_date">2022-01-14</span>
+              </a>
+            </div>
             <div class="blog_content blog_content06"></div>
           </div>
         </section>
@@ -665,6 +749,7 @@
   </div>
 
   <script src="https://kit.fontawesome.com/6ba7f99938.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
   <script src="script.js"></script>
 </body>
 </html>

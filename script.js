@@ -4,14 +4,15 @@ let bar = document.getElementsByClassName('bar');
 
 // Scroll
 const header = document.getElementById("header");
+const headerHidden = document.getElementById("hidden_header");
 const headerHeight = header.offsetHeight;
 
 window.addEventListener('scroll', function() {
   let windowTop = window.scrollY;
   if(windowTop >= headerHeight) {
-    header.classList.add("scrollActive");
+    headerHidden.classList.add("on");
   }else{
-    header.classList.remove("scrollActive");
+    headerHidden.classList.remove("on");
   }
 });
 
@@ -101,3 +102,27 @@ Array.from(faqContent).forEach((v) => {
     e.target.nextElementSibling.classList.toggle('active');
   });
 });
+
+// Text Animation
+const textWrapper = document.querySelectorAll('.text_wrapper');
+
+textWrapper.forEach((v) => {
+  const letters = v.querySelector('.letters');
+
+  letters.innerHTML = letters.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+  anime.timeline({loop: false})
+  .add({
+    targets: '.letters .letter',
+    translateY: ["1.2em", 0],
+    translateZ: 0,
+    duration: 750,
+    delay: (el, i) => 70 * i
+  }).add({
+    targets: '.letters',
+    opacity: 1,
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: 1000
+  });
+});
+
