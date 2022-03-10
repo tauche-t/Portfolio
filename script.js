@@ -57,9 +57,27 @@ popupContentsBox.forEach((e) => {
   });
 });
 
+function DetailFadeIn(event) {
+  const projectIndex = event.currentTarget.parentNode.parentNode.getAttribute('data-index');
+
+  console.log(projectIndex);
+
+  overlay.classList.remove('hide');
+
+  popupContents.forEach((e) => {
+    const popupIndex = e.getAttribute('data-index');
+    e.classList.remove("contents_on");
+
+    if(projectIndex === popupIndex) {
+      e.classList.add("contents_on");
+    }
+  });
+}
+
 projectContent.forEach((e) => {
   const projectContents = e.querySelector('.project_contents');
   const projectOverview = e.querySelector('.project_overview');
+  const detailBtn = e.querySelector('.project_btn li.detail_btn');
 
   projectContents.addEventListener('click', function(e) {
     const projectIndex = e.currentTarget.parentNode.parentNode.getAttribute('data-index');
@@ -70,6 +88,23 @@ projectContent.forEach((e) => {
       const popupIndex = e.getAttribute('data-index');
       e.classList.remove("contents_on");
 
+      if(projectIndex === popupIndex) {
+        e.classList.add("contents_on");
+      }
+    });
+  });
+
+  detailBtn.addEventListener('click', function(e) {
+    e.preventDefault();
+  
+    const projectIndex = e.currentTarget.parentNode.parentNode.parentNode.getAttribute('data-index');
+  
+    overlay.classList.remove('hide');
+  
+    popupContents.forEach((e) => {
+      const popupIndex = e.getAttribute('data-index');
+      e.classList.remove("contents_on");
+  
       if(projectIndex === popupIndex) {
         e.classList.add("contents_on");
       }
