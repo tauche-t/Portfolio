@@ -411,6 +411,11 @@ section {
 #skills .skills_contents_wrap .skills_content ul.skill_description li {
   text-align: left;
 }
+#skills .skills_contents_wrap .skills_content ul.skill_description li a {
+  position: relative;
+  z-index: 20;
+  color: #a1a1a1;
+}
 #skills .skills_contents_wrap .skills_content ul li .main_skills_img {
   margin: 0 auto;
 }
